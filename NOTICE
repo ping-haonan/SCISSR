@@ -1,0 +1,25 @@
+SCISSR: Scribble-Conditioned Interactive Surgical Segmentation and Refinement
+Copyright [yyyy] [SCISSR authors]
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+------------------------------------------------------------------------------
+This product includes and/or is derived from third-party software:
+
+1. Segment Anything Model 2 (SAM 2)
+   Copyright (c) Meta Platforms, Inc. and affiliates.
+   Source: https://github.com/facebookresearch/sam2
+   License: Apache License 2.0
+   The directory `sam2/` contains code from this project (possibly modified).
+
+2. ScribblePrompt
+   Copyright (c) Hallee E. Wong and contributors.
+   Source: https://github.com/halleewong/ScribblePrompt
+   License: Apache License 2.0
+   Portions of the scribble synthesis / interaction code under
+   `scribbleprompt_sam2/interactions/` are adapted from this project.
+
+Modifications relative to the upstream projects were made by the SCISSR authors
+to implement the Scribble Encoder, Spatial Gated Fusion, toggleable LoRA adapters,
+and memory-driven iterative refinement described in the SCISSR paper.

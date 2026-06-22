@@ -1,0 +1,38 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Datasets (download / prepare locally — see dataset/README.md)
+dataset/CholecSeg8k/
+dataset/Endovision18/
+dataset/Endovision18_Subset/
+dataset/**/raw/
+dataset/**/*.png
+dataset/**/*.jpg
+dataset/**/*.npy
+
+# Large external checkpoints (download via scripts; keep only SCISSR's lightweight weights)
+checkpoints/*.pt
+checkpoints/sam3.pt
+!checkpoints/scissr/*.pt
+third_party/
+
+# Training / evaluation outputs
+outputs/
+trained_models/
+sam2_logs/
+runs/
+wandb/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
